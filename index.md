@@ -39,12 +39,17 @@ To stay current with new releases into the course repository, follow these steps
    git remote add upstream https://github.com/ksiller/ds2002-course.git
    ```
 
-2. Fetch from the upstream branch:
+2. Switch to main branch:
+   ```bash
+   git switch main
+   ```
+
+3. Fetch from the upstream branch:
    ```bash
    git fetch upstream
    ```
 
-3. Merge your branch with the upstream branch.
+4. Merge your branch with the upstream branch.
    ```bash
    git merge upstream/main
    ```
@@ -52,7 +57,6 @@ To stay current with new releases into the course repository, follow these steps
 This can be run in a single block:
 ```bash
 git remote add upstream https://github.com/ksiller/ds2002-course.git
-# make sure all local changes are committed
 git switch main
 git fetch upstream
 git merge upstream/main
