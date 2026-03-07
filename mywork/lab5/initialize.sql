@@ -1,0 +1,24 @@
+USE fvd6wy_db;
+CREATE TABLE teachers (teacher_id INT PRIMARY KEY, teacher_first_name VARCHAR(20), teacher_last_name VARCHAR(20), classroom_number INT);
+CREATE TABLE students (student_id INT PRIMARY KEY, student_first_name VARCHAR(20), student_last_name VARCHAR(20), teacher_id INT,  FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id));
+
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (1, 'Teacher', 'One', 101);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (2, 'Teacher', 'Two', 102);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (3, 'Teacher', 'Three', 103);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (4, 'Teacher', 'Four', 104);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (5, 'Teacher', 'Five', 105);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (6, 'Teacher', 'Six', 106);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (7, 'Teacher', 'Seven', 107);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (8, 'Teacher', 'Eight', 108);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (9, 'Teacher', 'Nine', 109);
+INSERT INTO teachers (teacher_id, teacher_first_name, teacher_last_name, classroom_number) VALUES (10,'Teacher', 'Ten', 110);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (1, 'Student', 'One', 1);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (2, 'Student', 'Two', 2);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (3, 'Student', 'Three', 3);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (4, 'Student', 'Four', 4);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (5, 'Student', 'Five', 5);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (6, 'Student', 'Six', 6);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (7, 'Student', 'Seven', 7);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (8, 'Student', 'Eight', 8);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (9, 'Student', 'Nine', 9);
+INSERT INTO students (student_id, student_first_name, student_last_name, teacher_id) VALUES (10, 'Student', 'Ten', 10);
